@@ -20,18 +20,29 @@ const Header = () => {
               <Nav.Link as={Link} to="/inventory">
                 Inventory
               </Nav.Link>
-              <Nav.Link as={Link} to="#pricing">
+              <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                Contact
+              </Nav.Link>
               <NavDropdown title="Blog" id="collasible-nav-dropdown">
-                <NavDropdown.Item to="#action/3.1">Blog-1</NavDropdown.Item>
-                <NavDropdown.Item to="#action/3.2">Blog-2</NavDropdown.Item>
-                <NavDropdown.Item to="#action/3.3">Blog-3</NavDropdown.Item>
-                <NavDropdown.Item to="#action/3.3">Blog-4</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/blog-1">
+                  Blog-1
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/blog-2">
+                  Blog-2
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/blog-3">
+                  Blog-3
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/blog-4">
+                  Blog-4
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link to="#deets">
+              <Nav.Link as={Link} to="#deets">
                 <i className="fas fa-user"></i>
               </Nav.Link>
             </Nav>
