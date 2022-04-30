@@ -1,0 +1,32 @@
+.newsletter {
+  padding: 5rem 0;
+  background: url(../../images/books/letter-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.newsletter form {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: 35px;
+  text-align: center;
+}
+
+.newsletter form h3 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 992px) {
+  .newsletter {
+    background-position: right;
+  }
+
+  .newsletter form {
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 100%;
+  }
+}

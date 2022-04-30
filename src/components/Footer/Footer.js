@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="row row-cols-1 row-cols-lg-3 p-2 p-lg-4">
         <div className="col">
           <div className="footer-left text-start">
-            <div className="pb-2">
+            <div className="pb-2 pt-4 pt-lg-0">
               <i className="fas fa-book"></i>{" "}
               <span
                 style={{ fontWeight: "bold", color: "#fff", fontSize: "20px" }}
