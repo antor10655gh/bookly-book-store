@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&family=Ubuntu&display=swap");
+
+:root {
+  --green: #27ae60;
+  --dark-color: #219150;
+  --black: #444;
+  --light-color: #666;
+  --border: 1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(var(--black));
+  --box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
 .App {
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .App-logo {
