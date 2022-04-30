@@ -1,0 +1,46 @@
+.home {
+  background: url(../../images/books/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide img {
+  height: 25rem;
+}
+.content h1 {
+  font-size: 55px;
+  padding-bottom: 10px;
+}
+
+.content p {
+  color: var(--light-color);
+}
+
+.stand {
+  width: 480px;
+  margin-top: 0.1rem;
+}
+
+.shopBtn {
+  border-radius: 4px;
+  background-color: var(--green);
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  transition: 0.5s;
+}
+
+.shopBtn:hover {
+  color: #fff;
+  background-color: var(--dark-green);
+}
+
+@media screen and (max-width: 992px) {
+  .content h1 {
+    padding-bottom: 5px;
+    font-size: 42px;
+  }
+  .stand {
+    width: 100%;
+  }
+}

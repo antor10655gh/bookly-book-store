@@ -6,3 +6,21 @@
 .fa-user {
   font-size: 25px;
 }
+
+.fa-user:hover {
+  color: var(--black) !important;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.navbar-menu a {
+  color: var(--black) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-menu a:hover {
+  color: var(--green) !important;
+}

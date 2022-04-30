@@ -12,11 +12,12 @@ const Header = () => {
     signOut(auth);
   };
   return (
-    <div className="">
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <div className="box-shadow">
+      <Navbar collapseOnSelect expand="lg" className="navbar-menu">
         <Container>
           <Navbar.Brand to="#home">
-            <i className="fas fa-book"></i> bookly
+            <i className="fas fa-book"></i>{" "}
+            <span style={{ fontWeight: "bold" }}>Bookly</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -60,7 +61,7 @@ const Header = () => {
                 </Nav.Link>
               ) : (
                 <Nav.Link as={Link} to="/login">
-                  <i className="fas fa-user"></i>
+                  <i class="fa-regular fa-user"></i>
                 </Nav.Link>
               )}
             </Nav>
