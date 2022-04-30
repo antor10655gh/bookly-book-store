@@ -1,0 +1,38 @@
+.total-form {
+  width: 450px;
+}
+
+.form-details input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+}
+
+.signUP-btn {
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  background-color: var(--green);
+  transition: 0.5s;
+}
+
+.signUP-btn:hover {
+  color: #fff;
+  background-color: var(--dark-green);
+}
+
+.signUP-btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: var(--dark-green);
+}
+
+@media screen and (max-width: 992px) {
+  .total-form {
+    width: 100%;
+  }
+}

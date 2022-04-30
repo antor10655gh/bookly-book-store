@@ -1,0 +1,23 @@
+.login-btn {
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  background-color: var(--green);
+  transition: 0.5s;
+}
+
+.login-btn:hover {
+  color: #fff;
+  background-color: var(--dark-green);
+}
+
+.login-btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: var(--dark-green);
+}
+
+.just-form {
+  border: 1px solid gray;
+}
