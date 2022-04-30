@@ -6,7 +6,14 @@ const OurService = () => {
     <div className="container py-3">
       <header className="text-center pt-lg-3 pb-lg-4">
         <h2>
-          Our <span style={{ color: "var(--green)" }}>Service</span>
+          <span id="span">S</span>
+          <span id="span">E</span>
+          <span id="span">R</span>
+          <span id="span">V</span>
+          <span id="span">I</span>
+          <span id="span">C</span>
+          <span id="span">E</span>
+          <span id="span">S</span>
         </h2>
         <div
           style={{

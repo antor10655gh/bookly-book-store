@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Inventory from "./Pages/Inventory/Inventory";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
+import MainInvoices from "./Pages/MainInvoices/MainInvoices";
 
 function App() {
   return (
@@ -16,7 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/inventory" element={<Inventory></Inventory>}></Route>
+        <Route
+          path="/inventory"
+          element={<MainInvoices></MainInvoices>}
+        ></Route>
         <Route path="/blog-1"></Route>
         <Route path="/blog-2"></Route>
         <Route path="/blog-3"></Route>

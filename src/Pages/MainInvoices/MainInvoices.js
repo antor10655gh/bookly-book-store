@@ -1,9 +1,9 @@
 import React from "react";
 import useInventory from "../../hooks/useInventory/useInventory";
-import HomeInvoice from "../HomeInvoice/HomeInvoice";
-import "./HomeInvoices.css";
+import MainInvoice from "../MainInvoice/MainInvoice";
+import "./MainInvoices.css";
 
-const HomeInvoices = () => {
+const MainInvoices = () => {
   const [invoices, setInvoices] = useInventory();
   return (
     <div className="container py-3 py-lg-5">
@@ -26,13 +26,13 @@ const HomeInvoices = () => {
           }}
         ></div>
       </header>
-      <div className="row row-cols-1 row-cols-lg-3 g-4">
-        {invoices.slice(0, 3).map((invoice) => (
-          <HomeInvoice key={invoice.id} invoice={invoice}></HomeInvoice>
+      <div className="row row-cols-1 row-cols-lg-3 g-5">
+        {invoices.map((invoice) => (
+          <MainInvoice key={invoice.id} invoice={invoice}></MainInvoice>
         ))}
       </div>
     </div>
   );
 };
 
-export default HomeInvoices;
+export default MainInvoices;
