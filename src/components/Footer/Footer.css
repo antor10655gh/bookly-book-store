@@ -1,0 +1,35 @@
+.footer {
+  background-color: black;
+  color: #9aa2a8;
+}
+
+#footer-input {
+  background-color: #fff;
+}
+
+h3 {
+  color: #fff;
+  font-size: 22px;
+}
+
+nav a {
+  color: rgb(154, 162, 168);
+  text-decoration: none;
+  padding: 10px 8px;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+.submit-btn {
+  border: none;
+  background-color: var(--green);
+  color: aliceblue;
+  transition: 0.5s;
+}
+
+.submit-btn:hover {
+  background-color: var(--dark-green);
+}

@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
 import MainInvoices from "./Pages/MainInvoices/MainInvoices";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
