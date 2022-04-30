@@ -4,7 +4,7 @@ import "./OurService.css";
 const OurService = () => {
   return (
     <div className="container py-3">
-      <header className="text-center pt-lg-3 pb-lg-4">
+      <header className="text-center pt-3 pt-lg-3 pb-lg-4">
         <h2>
           <span id="span">S</span>
           <span id="span">E</span>

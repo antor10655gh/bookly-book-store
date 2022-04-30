@@ -7,7 +7,7 @@ const MainInvoices = () => {
   const [invoices, setInvoices] = useInventory();
   return (
     <div className="container py-3 py-lg-5">
-      <header className="text-center pt-lg-3 pb-lg-5">
+      <header className="text-center pt-3 pt-lg-3 pb-lg-5 pb-3">
         <h2>
           <span id="span">I</span>
           <span id="span">N</span>
@@ -26,7 +26,7 @@ const MainInvoices = () => {
           }}
         ></div>
       </header>
-      <div className="row row-cols-1 row-cols-lg-3 g-5">
+      <div className="row row-cols-1 row-cols-lg-3 pt-3 g-5">
         {invoices.map((invoice) => (
           <MainInvoice key={invoice.id} invoice={invoice}></MainInvoice>
         ))}

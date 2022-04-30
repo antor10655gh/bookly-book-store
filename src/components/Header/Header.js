@@ -15,7 +15,7 @@ const Header = () => {
     <div className="box-shadow">
       <Navbar collapseOnSelect expand="lg" className="navbar-menu">
         <Container>
-          <Navbar.Brand to="#home">
+          <Navbar.Brand as={Link} to="/">
             <i className="fas fa-book"></i>{" "}
             <span style={{ fontWeight: "bold" }}>Bookly</span>
           </Navbar.Brand>
