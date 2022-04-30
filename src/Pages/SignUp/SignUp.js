@@ -98,7 +98,7 @@ const SignUp = () => {
             <div className="text-center mt-2">
               <span className="me-2">Already have an account?</span>
               <span>
-                <Link style={{ color: "orange" }} to="/login">
+                <Link style={{ color: "var(--green)" }} to="/login">
                   Login
                 </Link>
               </span>

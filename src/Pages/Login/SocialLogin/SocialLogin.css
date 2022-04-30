@@ -10,8 +10,8 @@
 }
 
 .googleBtn:hover {
-  background-color: orange;
-  border: 1px solid orange;
+  background-color: var(--green);
+  border: 1px solid var(--green);
   color: aliceblue;
 }
 
