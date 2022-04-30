@@ -3,8 +3,8 @@ import "./OurService.css";
 
 const OurService = () => {
   return (
-    <div className="container">
-      <header className="text-center pt-lg-5 pb-lg-4">
+    <div className="container py-3">
+      <header className="text-center pt-lg-3 pb-lg-4">
         <h2>
           Our <span style={{ color: "var(--green)" }}>Service</span>
         </h2>
@@ -16,7 +16,7 @@ const OurService = () => {
           }}
         ></div>
       </header>
-      <div className="row row-cols-1 row-cols-lg-4 py-5">
+      <div className="row row-cols-1 row-cols-lg-4 pt-5">
         <div className="col">
           <div class="icons">
             <i class="fas fa-shipping-fast"></i>

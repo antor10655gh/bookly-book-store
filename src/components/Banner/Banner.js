@@ -21,7 +21,7 @@ const Banner = () => {
       <section className="home" id="home">
         <div className="row row-cols-1 row-cols-lg-2 mx-3 pt-5">
           <div className="col d-flex align-items-center text-start">
-            <div className="content py-4 px-lg-4 py-lg-0">
+            <div className="content py-4 px-lg-5 py-lg-0">
               <h1>
                 Upto 73% <span style={{ color: "var(--green)" }}>Off</span>
               </h1>
