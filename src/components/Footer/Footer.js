@@ -18,9 +18,10 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
-              laboriosam ut natus laudantium corporis, earum repellendus rem
-              molestias cumque excepturi reprehenderit!
+              This is so much popular warehouse. Warehouses are central
+              locations that manage both inbound and outbound products.
+              Maintaining a warehouse is crucial for any business that sells
+              physical goods!
             </p>
           </div>
         </div>
