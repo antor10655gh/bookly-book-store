@@ -33,191 +33,203 @@ const NewArrival = () => {
           }}
         ></div>
       </header>
-      <div className="row row-cols-1 row-cols-3 g-5 pt-3 pt-lg-5">
+      <div className="row row-cols-1 row-cols-lg-3 g-4 pt-3 pt-lg-5">
         <div className="col">
-          <div className="arrivals-slider">
-            <div className="wrapper">
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book1} alt="" />
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book1} alt="" />
+              </div>
+              <div className="content">
+                <h3>The Art City</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
                 </div>
-                <div className="content">
-                  <h3>The Art City</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
                 </div>
-              </Link>
-
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book2} alt="" />
-                </div>
-                <div className="content">
-                  <h3>Give Thanks</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book3} alt="" />
-                </div>
-                <div className="content">
-                  <h3>Your Name</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
-                </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="col">
-          <div className="arrivals-slider">
-            <div className="wrapper">
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book4} alt="" />
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book2} alt="" />
+              </div>
+              <div className="content">
+                <h3>Your Name</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
                 </div>
-                <div className="content">
-                  <h3>Exciting Belgrade</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
                 </div>
-              </Link>
-
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book5} alt="" />
-                </div>
-                <div className="content">
-                  <h3>Venice Kope</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book6} alt="" />
-                </div>
-                <div className="content">
-                  <h3>Sunny Barcelona</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
-                </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="col">
-          <div className="arrivals-slider">
-            <div className="wrapper">
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book7} alt="" />
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book3} alt="" />
+              </div>
+              <div className="content">
+                <h3>Venice Kope</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
                 </div>
-                <div className="content">
-                  <h3>Harper Collins</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
                 </div>
-              </Link>
-
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book8} alt="" />
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="col">
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book4} alt="" />
+              </div>
+              <div className="content">
+                <h3>Sunny Barcelona</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
                 </div>
-                <div className="content">
-                  <h3>Pearson Hole</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
                 </div>
-              </Link>
-
-              <Link to="#" className="box">
-                <div className="image">
-                  <img src={book9} alt="" />
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="col">
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book5} alt="" />
+              </div>
+              <div className="content">
+                <h3>Give Thanks</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
                 </div>
-                <div className="content">
-                  <h3>Penguin Random</h3>
-                  <div className="price">
-                    $15.99 <span>$20.99</span>
-                  </div>
-                  <div className="stars">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star-half-alt"></i>
-                  </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="col">
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book6} alt="" />
+              </div>
+              <div className="content">
+                <h3>Exciting Belgrade</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
+                </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="col">
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book7} alt="" />
+              </div>
+              <div className="content">
+                <h3>Give Thanks</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
+                </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="col">
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book8} alt="" />
+              </div>
+              <div className="content">
+                <h3>Exciting Belgrade</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
+                </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="col">
+          <div className="arrivals">
+            <Link to="#" className="box">
+              <div className="image">
+                <img src={book9} alt="" />
+              </div>
+              <div className="content">
+                <h3>Give Thanks</h3>
+                <div className="price">
+                  $15.99 <span>$20.99</span>
+                </div>
+                <div className="stars">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
