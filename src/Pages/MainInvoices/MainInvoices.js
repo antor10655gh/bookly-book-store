@@ -28,7 +28,7 @@ const MainInvoices = () => {
       </header>
       <div className="row row-cols-1 row-cols-lg-3 pt-3 g-5">
         {invoices.map((invoice) => (
-          <MainInvoice key={invoice.id} invoice={invoice}></MainInvoice>
+          <MainInvoice key={invoice._id} invoice={invoice}></MainInvoice>
         ))}
       </div>
     </div>
