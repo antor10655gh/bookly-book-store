@@ -30,7 +30,7 @@ const Banner = () => {
                 always think about the satisfaction of our customer. When our
                 customer happy then we are also be happy!!!
               </p>
-              <button className="shopBtn mt-3">shop now</button>
+              <button className="shopBtn mt-3">Shop Now</button>
             </div>
           </div>
 

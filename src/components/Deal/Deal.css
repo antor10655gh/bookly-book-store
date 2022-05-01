@@ -15,8 +15,8 @@
 }
 
 .deal .content p {
-  padding: 1rem 0;
   color: var(--light-color);
   font-size: 15px;
   line-height: 2;
+  padding-bottom: 20px;
 }

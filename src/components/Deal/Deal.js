@@ -17,8 +17,8 @@ const Deal = () => {
                 perspiciatis in atque dolore tempora quaerat at fuga dolorum
                 natus velit.
               </p>
-              <Link to="#" className="btn">
-                shop now
+              <Link to="#" className="shopBtn">
+                Shop Now
               </Link>
             </div>
           </div>
