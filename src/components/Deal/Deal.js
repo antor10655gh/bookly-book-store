@@ -13,9 +13,9 @@ const Deal = () => {
               <h3>Deal Of The Day</h3>
               <h1>Upto 50% Off</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-                perspiciatis in atque dolore tempora quaerat at fuga dolorum
-                natus velit.
+                You can do this by adding a negative line to the invoice and
+                specifying the discount in the description. The negative line
+                isn't a percentage, but equals the amount of the discount.
               </p>
               <Link to="#" className="shopBtn">
                 Shop Now

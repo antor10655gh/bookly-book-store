@@ -9,13 +9,12 @@ import book6 from "../../images/books/book-6.png";
 import book7 from "../../images/books/book-7.png";
 import book8 from "../../images/books/book-8.png";
 import book9 from "../../images/books/book-9.png";
-import book10 from "../../images/books/book-10.png";
 import { Link } from "react-router-dom";
 
 const NewArrival = () => {
   return (
-    <div className="container py-3">
-      <header className="text-center pt-3 pt-lg-5 pb-lg-4">
+    <div className="container py-3 py-lg-5">
+      <header className="text-center pt-3 pb-lg-4">
         <h2>
           <span id="span">A</span>
           <span id="span">R</span>

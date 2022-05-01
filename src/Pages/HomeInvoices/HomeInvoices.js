@@ -7,7 +7,7 @@ const HomeInvoices = () => {
   const [invoices, setInvoices] = useInventory();
   return (
     <div className="container py-3 py-lg-5">
-      <header className="text-center pt-lg-3 pb-lg-5 pb-3">
+      <header className="text-center pb-lg-5 pb-3">
         <h2>
           <span id="span">I</span>
           <span id="span">N</span>

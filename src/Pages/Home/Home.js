@@ -4,6 +4,7 @@ import Deal from "../../components/Deal/Deal";
 import NewArrival from "../../components/NewArrival/NewArrival";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import OurService from "../../components/OurService/OurService";
+import Reviews from "../../components/Reviews/Reviews";
 import HomeInvoices from "../HomeInvoices/HomeInvoices";
 import "./Home.css";
 
@@ -16,6 +17,7 @@ const Home = () => {
       <NewsLetter></NewsLetter>
       <NewArrival></NewArrival>
       <Deal></Deal>
+      <Reviews></Reviews>
     </div>
   );
 };

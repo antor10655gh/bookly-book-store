@@ -1,0 +1,33 @@
+.review-box img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-box {
+  padding: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.review-box:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.review-box h3 {
+  color: var(--black);
+  font-size: 22px;
+  padding: 0.5rem 0;
+}
+
+.review-box p {
+  color: var(--light-color);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.review-box .stars i {
+  font-size: 15px;
+  color: var(--green);
+}
