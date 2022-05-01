@@ -1,0 +1,22 @@
+.deal {
+  background: #f3f3f3;
+}
+
+.deal .content h3 {
+  color: var(--green);
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.deal .content h1 {
+  color: var(--black);
+  font-size: 45px;
+}
+
+.deal .content p {
+  padding: 1rem 0;
+  color: var(--light-color);
+  font-size: 15px;
+  line-height: 2;
+}
