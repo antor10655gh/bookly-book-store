@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
   return (
     <div className="container-fluid footer">
-      <div className="row row-cols-1 row-cols-lg-3 p-2 p-lg-4">
+      <div className="row row-cols-1 row-cols-lg-3 p-2 p-lg-4 pt-5 ">
         <div className="col">
           <div className="footer-left text-start">
-            <div className="pb-2 pt-4 pt-lg-0">
+            <div className="pb-2 pt-2 pt-lg-0">
               <i className="fas fa-book"></i>{" "}
               <span
                 style={{ fontWeight: "bold", color: "#fff", fontSize: "20px" }}
@@ -52,6 +54,24 @@ const Footer = () => {
               Submit
             </Button>
           </Form>
+        </div>
+      </div>
+      <hr />
+      <div className="row row-cols-1 row-cols-lg-2 py-3 py-lg-2 d-flex justify-content-between align-items-center">
+        <div className="col text-lg-start">
+          <p className="px-3">
+            Copyright © {year} All Rights Reserved by{" "}
+            <span style={{ color: "var(--green)" }}>AM Antor.</span>.
+          </p>
+        </div>
+        <div className="col">
+          <div className="share px-3 text-lg-end">
+            <Link to="#" class="fab fa-facebook-f"></Link>
+            <Link to="#" class="fab fa-twitter"></Link>
+            <Link to="#" class="fab fa-instagram"></Link>
+            <Link to="#" class="fab fa-linkedin"></Link>
+            <Link to="#" class="fab fa-pinterest"></Link>
+          </div>
         </div>
       </div>
     </div>

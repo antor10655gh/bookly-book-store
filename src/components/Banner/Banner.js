@@ -17,9 +17,9 @@ import stand from "../../images/books/stand.png";
 
 const Banner = () => {
   return (
-    <div className="mt-3">
+    <div className="mt-1 mt-lg-3">
       <section className="home" id="home">
-        <div className="row row-cols-1 row-cols-lg-2 mx-3 pt-5">
+        <div className="row row-cols-1 row-cols-lg-2 mx-3 pt-lg-5">
           <div className="col d-flex align-items-center text-start">
             <div className="content py-4 px-lg-5 py-lg-0">
               <h1>
@@ -77,7 +77,7 @@ const Banner = () => {
               </SwiperSlide>
               <SwiperSlide className="mx-1">
                 <Link to="#" className="swiper-slide">
-                  <img src={book3} alt="" />
+                  <img src={book5} alt="" />
                 </Link>
               </SwiperSlide>
               <SwiperSlide className="mx-1">
