@@ -1,0 +1,47 @@
+.gallery-box {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border: 1rem solid #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.gallery-box .content {
+  position: absolute;
+  top: -110%;
+  left: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.gallery-box:hover .content {
+  top: -15px;
+}
+
+.gallery-box .content h3 {
+  font-size: 25px;
+  color: var(--green);
+  padding-top: 2.8rem;
+}
+
+.gallery-box .content p {
+  font-size: 12px;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+
+.gallery-box .content .seeMore-btn {
+  background-color: var(--green);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 15px;
+  color: #eee;
+  transition: 0.5s;
+}
+
+.gallery-box .content .seeMore-btn:hover {
+  background-color: var(--dark-green);
+}
