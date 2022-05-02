@@ -1,0 +1,9 @@
+.deleteBtn {
+  background-color: var(--green);
+  border: none;
+  border-radius: 0;
+}
+
+.deleteBtn:hover {
+  background-color: var(--dark-green);
+}

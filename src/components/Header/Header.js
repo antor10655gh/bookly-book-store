@@ -50,6 +50,16 @@ const Header = () => {
               </NavDropdown>
             </Nav>
             <Nav>
+              {user && (
+                <>
+                  <Nav.Link as={Link} to="/additem">
+                    Add-I
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/manageitem">
+                    Manage-I
+                  </Nav.Link>
+                </>
+              )}
               {user ? (
                 <Nav.Link onClick={handleSignOut}>
                   <i

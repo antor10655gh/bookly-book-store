@@ -13,6 +13,7 @@ import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import UpdateInvoice from "./Pages/UpdateInvoice/UpdateInvoice";
 import AddItem from "./Pages/AddItem/AddItem";
 import NotFound from "./components/NotFound/NotFound";
+import ManageItems from "./Pages/ManageItems/ManageItems";
 
 function App() {
   return (
@@ -38,6 +39,14 @@ function App() {
           element={
             <RequireAuth>
               <AddItem></AddItem>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/manageitem"
+          element={
+            <RequireAuth>
+              <ManageItems></ManageItems>
             </RequireAuth>
           }
         ></Route>
