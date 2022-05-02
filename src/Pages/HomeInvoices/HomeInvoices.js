@@ -27,7 +27,7 @@ const HomeInvoices = () => {
         ></div>
       </header>
       <div className="row row-cols-1 row-cols-lg-3 pt-3 g-4">
-        {invoices.slice(0, 3).map((invoice) => (
+        {invoices.slice(0, 6).map((invoice) => (
           <HomeInvoice key={invoice._id} invoice={invoice}></HomeInvoice>
         ))}
       </div>
