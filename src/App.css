@@ -20,6 +20,10 @@
   pointer-events: none;
 }
 
+.App p {
+  color: var(--light-color);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
