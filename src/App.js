@@ -11,6 +11,8 @@ import MainInvoices from "./Pages/MainInvoices/MainInvoices";
 import Footer from "./components/Footer/Footer";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import UpdateInvoice from "./Pages/UpdateInvoice/UpdateInvoice";
+import AddItem from "./Pages/AddItem/AddItem";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -31,6 +33,14 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route
+          path="/additem"
+          element={
+            <RequireAuth>
+              <AddItem></AddItem>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/blog-1"></Route>
         <Route path="/blog-2"></Route>
         <Route path="/blog-3"></Route>
@@ -39,6 +49,7 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

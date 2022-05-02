@@ -61,7 +61,7 @@ const Header = () => {
                 </Nav.Link>
               ) : (
                 <Nav.Link as={Link} to="/login">
-                  <i class="fa-regular fa-user"></i>
+                  <i className="fa-regular fa-user"></i>
                 </Nav.Link>
               )}
             </Nav>

@@ -27,7 +27,7 @@ const Reviews = () => {
       </header>
       <div className="row row-cols-1 row-cols-lg-3">
         <div className="col">
-          <div class="review-box">
+          <div className="review-box">
             <img src={reviews1} alt="" />
             <h3>John Deo</h3>
             <p>
@@ -35,17 +35,17 @@ const Reviews = () => {
               Employers usually ask applicants to highlight relevant skills in a
               job application.
             </p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+            <div className="stars">
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star-half-alt"></i>
             </div>
           </div>
         </div>
         <div className="col">
-          <div class="review-box">
+          <div className="review-box">
             <img src={reviews2} alt="" />
             <h3>Risa Leo</h3>
             <p>
@@ -53,17 +53,17 @@ const Reviews = () => {
               Employers usually ask applicants to highlight relevant skills in a
               job application.
             </p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+            <div className="stars">
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star-half-alt"></i>
             </div>
           </div>
         </div>
         <div className="col">
-          <div class="review-box">
+          <div className="review-box">
             <img src={reviews3} alt="" />
             <h3>David John</h3>
             <p>
@@ -71,12 +71,12 @@ const Reviews = () => {
               Employers usually ask applicants to highlight relevant skills in a
               job application.
             </p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+            <div className="stars">
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star"></i>
+              <i className="fas fa-star-half-alt"></i>
             </div>
           </div>
         </div>

@@ -66,11 +66,11 @@ const Footer = () => {
         </div>
         <div className="col">
           <div className="share px-3 text-lg-end">
-            <Link to="#" class="fab fa-facebook-f"></Link>
-            <Link to="#" class="fab fa-twitter"></Link>
-            <Link to="#" class="fab fa-instagram"></Link>
-            <Link to="#" class="fab fa-linkedin"></Link>
-            <Link to="#" class="fab fa-pinterest"></Link>
+            <Link to="#" className="fab fa-facebook-f"></Link>
+            <Link to="#" className="fab fa-twitter"></Link>
+            <Link to="#" className="fab fa-instagram"></Link>
+            <Link to="#" className="fab fa-linkedin"></Link>
+            <Link to="#" className="fab fa-pinterest"></Link>
           </div>
         </div>
       </div>

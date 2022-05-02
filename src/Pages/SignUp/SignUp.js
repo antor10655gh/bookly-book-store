@@ -16,8 +16,6 @@ const SignUp = () => {
 
   const navigate = useNavigate();
 
-  const firstNameRef = useRef();
-  const lastNameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
