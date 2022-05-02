@@ -14,6 +14,10 @@ import UpdateInvoice from "./Pages/UpdateInvoice/UpdateInvoice";
 import AddItem from "./Pages/AddItem/AddItem";
 import NotFound from "./components/NotFound/NotFound";
 import ManageItems from "./Pages/ManageItems/ManageItems";
+import Blog1 from "./Pages/Blog/Blog1/Blog1";
+import Blog2 from "./Pages/Blog/Blog2/Blog2";
+import Blog3 from "./Pages/Blog/Blog3/Blog3";
+import Blog4 from "./Pages/Blog/Blog4/Blog4";
 
 function App() {
   return (
@@ -50,10 +54,10 @@ function App() {
             </RequireAuth>
           }
         ></Route>
-        <Route path="/blog-1"></Route>
-        <Route path="/blog-2"></Route>
-        <Route path="/blog-3"></Route>
-        <Route path="/blog-4"></Route>
+        <Route path="/blog-1" element={<Blog1></Blog1>}></Route>
+        <Route path="/blog-2" element={<Blog2></Blog2>}></Route>
+        <Route path="/blog-3" element={<Blog3></Blog3>}></Route>
+        <Route path="/blog-4" element={<Blog4></Blog4>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
