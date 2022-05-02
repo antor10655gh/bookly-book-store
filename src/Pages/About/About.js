@@ -5,6 +5,24 @@ import aboutImg from "../../images/about-me/about.jpg";
 const About = () => {
   return (
     <div className="container py-3 py-lg-5">
+      <header className="text-center pt-3 pt-lg-3 pb-lg-5 pb-3">
+        <h2>
+          <span id="span">A</span>
+          <span id="span">B</span>
+          <span id="span">O</span>
+          <span id="span">U</span>
+          <span id="span">T</span>
+          <span id="span">M</span>
+          <span id="span">E</span>
+        </h2>
+        <div
+          style={{
+            width: "150px",
+            borderBottom: "3px solid var(--green)",
+            margin: "0 auto",
+          }}
+        ></div>
+      </header>
       <div className="row row-cols-1 row-cols-lg-2 d-flex align-items-center">
         <div className="col">
           <div className="about-banner">

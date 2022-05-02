@@ -61,7 +61,7 @@ const Login = () => {
       <div className="total-form mx-auto bg-white mt-4">
         <div className="just-form p-4">
           <header className="mb-4 text-start fw-bold">
-            <h3>Please Login</h3>
+            <h2>Please Login</h2>
           </header>
           <div className="form-details text-start">
             <Form onSubmit={handleSignIn}>

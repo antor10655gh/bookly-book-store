@@ -50,7 +50,7 @@ const SignUp = () => {
       <div className="total-form mx-auto bg-white mt-4">
         <div className="just-form p-4">
           <header className="mb-4 text-start fw-bold">
-            <h3>Create an account</h3>
+            <h2>Create an account</h2>
           </header>
           <div className="form-details text-start">
             <Form onSubmit={handleSubmitForm}>
