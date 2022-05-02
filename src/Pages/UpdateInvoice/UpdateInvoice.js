@@ -35,7 +35,8 @@ const UpdateInvoice = () => {
             <strong>Quantity:</strong> {invoice.quantity}
           </p>
         </div>
-        <button className="deliveryBtn">Delivery</button>
+        <button className="deliveryBtn me-1">Delivery</button>
+        <button className="deliveryBtn ms-1">Manage Inventory</button>
       </div>
     </div>
   );

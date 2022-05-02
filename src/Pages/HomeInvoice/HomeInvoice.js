@@ -1,9 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./HomeInvoice.css";
 
 const HomeInvoice = (props) => {
-  const { id, name, price, quantity, picture, description, supplier } =
+  const { _id, name, price, quantity, picture, description, supplier } =
     props.invoice;
+  const navigate = useNavigate();
+
+  const handleUpdateBtn = (id) => {
+    navigate(`/inventory/${id}`);
+  };
   return (
     <div className="col text-start">
       <div className="card h-100">
@@ -23,7 +29,9 @@ const HomeInvoice = (props) => {
             <span style={{ color: "var(--green)" }}>{price}</span>
           </div>
         </div>
-        <button className="updateBtn">Update Invoice</button>
+        <button onClick={() => handleUpdateBtn(_id)} className="updateBtn">
+          Update Invoice
+        </button>
       </div>
     </div>
   );
