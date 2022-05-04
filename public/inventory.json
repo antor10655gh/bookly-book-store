@@ -3,7 +3,7 @@
     "id": "1",
     "name": "The Art City",
     "price": "$234",
-    "quantity": "10pc's",
+    "quantity": 10,
     "supplier": "Thomson Reuters",
     "picture": "https://images.unsplash.com/photo-1521123845560-14093637aa7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     "description": "Proident id esse tempor veniam amet consequat minim tempor ad eu. Velit Lorem Lorem cillum reprehenderit aute irure."
@@ -12,16 +12,16 @@
     "id": "2",
     "name": "Give Thanks",
     "price": "$464",
-    "quantity": "12pc's",
+    "quantity": 12,
     "supplier": "Penguin Random",
     "picture": "https://images.unsplash.com/photo-1639690283465-3fe1bd07c51c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "description": "Tokyo may be forever reaching into the future but you can still see traces of the shogun’s capital on the kabuki stage."
+    "description": "Tokyo may be forever reaching into the future but you can still see traces of the shogun's capital on the kabuki stage."
   },
   {
     "id": "3",
     "name": "Your Name",
     "price": "$438",
-    "quantity": "8pc's",
+    "quantity": 8,
     "supplier": "Hachette Livre",
     "picture": "https://images.unsplash.com/photo-1636262513944-1362edb40902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     "description": "Aliquip eu veniam aute culpa dolor officia reprehenderit amet Lorem. Incididunt adipisicing exercitation."
@@ -30,7 +30,7 @@
     "id": "4",
     "name": "Exciting Belgrade",
     "price": "$496",
-    "quantity": "10pc's",
+    "quantity": 10,
     "supplier": "Pearson Hole",
     "picture": "https://images.unsplash.com/photo-1636262513955-986a7bc5be16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     "description": "Enim sit elit nulla nulla labore aliquip veniam reprehenderit dolor."
@@ -39,7 +39,7 @@
     "id": "5",
     "name": "Venice Kope",
     "price": "$355",
-    "quantity": "12pc's",
+    "quantity": 12,
     "supplier": "Harper Collins",
     "picture": "https://images.unsplash.com/photo-1515098506762-79e1384e9d8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
     "description": "Garden islands and lagoon aquaculture yield speciality produce and seafood you won’t find elsewhere."
@@ -48,7 +48,7 @@
     "id": "6",
     "name": "Sunny Barcelona",
     "price": "$281",
-    "quantity": "14pc's",
+    "quantity": 14,
     "supplier": "Macmillan Publishers",
     "picture": "https://images.unsplash.com/photo-1504610494206-81887ec0fff1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
     "description": "Barcelona is an enchanting seaside city with boundless culture, fabled architecture."

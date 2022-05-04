@@ -4,13 +4,24 @@ import "./UpdateInvoice.css";
 
 const UpdateInvoice = () => {
   const { inventoryId } = useParams();
-  const [invoice, setInvoice] = useState([]);
+  const [invoice, setInvoice] = useState({});
 
   useEffect(() => {
     fetch(`http://localhost:5000/inventory/${inventoryId}`)
       .then((res) => res.json())
       .then((json) => setInvoice(json));
   }, []);
+
+  const decreaseQuantity = () => {
+    fetch(`http://localhost:5000/inventory/plus/${inventoryId}`, {
+      method: "PUT",
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        setInvoice({ ...invoice, quantity: invoice.quantity - 1 });
+      });
+  };
+
   return (
     <div className="container py-lg-5">
       <div className="invoice text-start">
@@ -35,7 +46,9 @@ const UpdateInvoice = () => {
             <strong>Quantity:</strong> {invoice.quantity}
           </p>
         </div>
-        <button className="deliveryBtn me-1">Delivery</button>
+        <button className="deliveryBtn me-1" onClick={decreaseQuantity}>
+          Delivery
+        </button>
         <button className="deliveryBtn ms-1">Manage Inventory</button>
       </div>
     </div>
