@@ -13,13 +13,32 @@ const UpdateInvoice = () => {
   }, []);
 
   const decreaseQuantity = () => {
-    fetch(`http://localhost:5000/inventory/plus/${inventoryId}`, {
+    fetch(`http://localhost:5000/inventory/minus/${inventoryId}`, {
       method: "PUT",
     })
       .then((res) => res.json())
       .then((json) => {
         setInvoice({ ...invoice, quantity: invoice.quantity - 1 });
       });
+  };
+
+  const handleRestock = async (e) => {
+    e.preventDefault();
+    const value = e.target.restock.value;
+
+    fetch(`http://localhost:5000/inventory/plus/${inventoryId}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ quantity: value }),
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        setInvoice({
+          ...invoice,
+          quantity: parseInt(invoice.quantity) + parseInt(value),
+        });
+      });
+    e.target.restock.value = "";
   };
 
   return (
@@ -50,6 +69,19 @@ const UpdateInvoice = () => {
           Delivery
         </button>
         <button className="deliveryBtn ms-1">Manage Inventory</button>
+
+        <div className="restock mt-3 py-3">
+          <header>
+            <h2>You can restock</h2>
+          </header>
+          <form onSubmit={handleRestock}>
+            <input name="restock" type="number" />
+            <br />
+            <button className="restockBtn" type="submit">
+              Restock
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

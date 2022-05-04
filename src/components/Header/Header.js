@@ -58,6 +58,9 @@ const Header = () => {
                   <Nav.Link as={Link} to="/manageitem">
                     Manage-I
                   </Nav.Link>
+                  <Nav.Link as={Link} to="/myitem">
+                    My-I
+                  </Nav.Link>
                 </>
               )}
               {user ? (

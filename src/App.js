@@ -18,6 +18,7 @@ import Blog1 from "./Pages/Blog/Blog1/Blog1";
 import Blog2 from "./Pages/Blog/Blog2/Blog2";
 import Blog3 from "./Pages/Blog/Blog3/Blog3";
 import Blog4 from "./Pages/Blog/Blog4/Blog4";
+import MyItems from "./Pages/MyItems/MyItems";
 
 function App() {
   return (
@@ -51,6 +52,14 @@ function App() {
           element={
             <RequireAuth>
               <ManageItems></ManageItems>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/myitem"
+          element={
+            <RequireAuth>
+              <MyItems></MyItems>
             </RequireAuth>
           }
         ></Route>
