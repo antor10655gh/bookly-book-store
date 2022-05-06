@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./UpdateInvoice.css";
 
 const UpdateInvoice = () => {
   const { inventoryId } = useParams();
   const [invoice, setInvoice] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`http://localhost:5000/inventory/${inventoryId}`)
@@ -41,6 +42,10 @@ const UpdateInvoice = () => {
     e.target.restock.value = "";
   };
 
+  const handleManageInventoryBtn = () => {
+    navigate("/manageitem");
+  };
+
   return (
     <div className="container py-lg-5">
       <div className="invoice text-start">
@@ -68,7 +73,12 @@ const UpdateInvoice = () => {
         <button className="deliveryBtn me-1" onClick={decreaseQuantity}>
           Delivery
         </button>
-        <button className="deliveryBtn ms-1">Manage Inventory</button>
+        <button
+          onClick={handleManageInventoryBtn}
+          className="manageInventoryBtn ms-1"
+        >
+          Manage Inventory
+        </button>
 
         <div className="restock mt-3 py-3">
           <header>

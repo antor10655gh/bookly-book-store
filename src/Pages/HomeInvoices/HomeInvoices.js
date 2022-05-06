@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import useInventory from "../../hooks/useInventory/useInventory";
 import HomeInvoice from "../HomeInvoice/HomeInvoice";
 import "./HomeInvoices.css";
 
 const HomeInvoices = () => {
   const [invoices, setInvoices] = useInventory();
+  const navigate = useNavigate();
+  const handleManageInventoryBtn = () => {
+    navigate("/manageitem");
+  };
   return (
     <div className="container py-3 py-lg-5">
       <header className="text-center pb-lg-5 pb-3">
@@ -30,6 +35,14 @@ const HomeInvoices = () => {
         {invoices.slice(0, 6).map((invoice) => (
           <HomeInvoice key={invoice._id} invoice={invoice}></HomeInvoice>
         ))}
+      </div>
+      <div className="py-2 mt-3 py-lg-4 mt-lg-5">
+        <button
+          onClick={handleManageInventoryBtn}
+          className="manageInventoryBtn"
+        >
+          Manage Inventory
+        </button>
       </div>
     </div>
   );

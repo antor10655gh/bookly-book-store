@@ -26,7 +26,7 @@ const HomeInvoice = (props) => {
         <div className="card-footer">
           <div className="footer-details d-flex justify-content-between align-items-center">
             <span>{supplier}</span>
-            <span style={{ color: "var(--green)" }}>{price}</span>
+            <span style={{ color: "var(--green)" }}>${price}</span>
           </div>
         </div>
         <button onClick={() => handleUpdateBtn(_id)} className="updateBtn">
