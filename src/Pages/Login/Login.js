@@ -43,6 +43,20 @@ const Login = () => {
     const password = passwordRef.current.value;
     signInWithEmailAndPassword(email, password);
 
+    const url = `http://localhost:5000/login`;
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+        localStorage.setItem("token", result.token);
+      });
+
     event.preventDefault();
   };
 

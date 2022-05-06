@@ -1,23 +1,28 @@
 import React from "react";
 import "./AddItem.css";
 import { useForm } from "react-hook-form";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const AddItem = () => {
+  const [user, loading, error] = useAuthState(auth);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    const newData = { ...data, email: user.email };
     const url = `http://localhost:5000/inventory`;
     fetch(url, {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(newData),
     })
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
-      });
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <div className="w-50 mx-auto py-5">
