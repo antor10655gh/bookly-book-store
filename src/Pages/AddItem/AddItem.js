@@ -3,10 +3,11 @@ import "./AddItem.css";
 import { useForm } from "react-hook-form";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { toast, ToastContainer } from "react-toastify";
 
 const AddItem = () => {
   const [user, loading, error] = useAuthState(auth);
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
     const newData = { ...data, email: user.email };
@@ -21,8 +22,11 @@ const AddItem = () => {
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
-      })
-      .catch((err) => console.log(err));
+        if (result) {
+          reset();
+        }
+      });
+    toast("Successfully add item.").catch((err) => console.log(err));
   };
   return (
     <div className="w-50 mx-auto py-5">
@@ -62,6 +66,7 @@ const AddItem = () => {
         />
         <input type="submit" value="Add Item" />
       </form>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
