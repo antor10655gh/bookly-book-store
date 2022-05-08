@@ -64,7 +64,7 @@ const AddItem = () => {
           type="number"
           {...register("quantity")}
         />
-        <input type="submit" value="Add Item" />
+        <input className="addBtn" type="submit" value="Add Item" />
       </form>
       <ToastContainer></ToastContainer>
     </div>
