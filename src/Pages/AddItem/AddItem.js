@@ -11,7 +11,7 @@ const AddItem = () => {
   const onSubmit = (data) => {
     console.log(data);
     const newData = { ...data, email: user.email };
-    const url = `http://localhost:5000/inventory`;
+    const url = `https://warm-castle-28299.herokuapp.com/inventory`;
     fetch(url, {
       method: "POST",
       headers: {

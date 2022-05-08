@@ -4,7 +4,7 @@ const useInventory = () => {
   const [invoices, setInvoices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/inventory")
+    fetch("https://warm-castle-28299.herokuapp.com/inventory")
       .then((res) => res.json())
       .then((json) => setInvoices(json));
   }, []);

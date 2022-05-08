@@ -8,15 +8,18 @@ const UpdateInvoice = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/inventory/${inventoryId}`)
+    fetch(`https://warm-castle-28299.herokuapp.com/inventory/${inventoryId}`)
       .then((res) => res.json())
       .then((json) => setInvoice(json));
   }, []);
 
   const decreaseQuantity = () => {
-    fetch(`http://localhost:5000/inventory/minus/${inventoryId}`, {
-      method: "PUT",
-    })
+    fetch(
+      `https://warm-castle-28299.herokuapp.com/inventory/minus/${inventoryId}`,
+      {
+        method: "PUT",
+      }
+    )
       .then((res) => res.json())
       .then((json) => {
         setInvoice({ ...invoice, quantity: invoice.quantity - 1 });
@@ -27,11 +30,14 @@ const UpdateInvoice = () => {
     e.preventDefault();
     const value = e.target.restock.value;
 
-    fetch(`http://localhost:5000/inventory/plus/${inventoryId}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ quantity: value }),
-    })
+    fetch(
+      `https://warm-castle-28299.herokuapp.com/inventory/plus/${inventoryId}`,
+      {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ quantity: value }),
+      }
+    )
       .then((res) => res.json())
       .then((json) => {
         setInvoice({

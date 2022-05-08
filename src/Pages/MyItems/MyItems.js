@@ -6,7 +6,7 @@ const MyItems = () => {
   const [invoices, setInvoices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/myitem", {
+    fetch("https://warm-castle-28299.herokuapp.com/myitem", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token"),
@@ -23,7 +23,7 @@ const MyItems = () => {
   const handleRemove = (id) => {
     const proceed = window.confirm("Are you sure to remove?");
     if (proceed) {
-      const url = `http://localhost:5000/inventory/${id}`;
+      const url = `https://warm-castle-28299.herokuapp.com/inventory/${id}`;
       fetch(url, {
         method: "DELETE",
       })

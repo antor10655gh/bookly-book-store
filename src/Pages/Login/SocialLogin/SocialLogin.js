@@ -17,7 +17,7 @@ const SocialLogin = () => {
   const navigate = useNavigate();
 
   if (user) {
-    const url = `http://localhost:5000/login`;
+    const url = `https://warm-castle-28299.herokuapp.com/login`;
     fetch(url, {
       method: "POST",
       headers: {
