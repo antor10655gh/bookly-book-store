@@ -1,10 +1,6 @@
 # Bookly WareHouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## How can I make in this project
-
-In the project directory, you can run:
+Here is my site link [Bookly-Warehouse](https://bookly-project-d23c0.firebaseapp.com/).
 
 ### Project Menu
 
