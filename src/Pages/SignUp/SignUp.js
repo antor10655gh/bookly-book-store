@@ -7,7 +7,6 @@ import SocialLogin from "../Login/SocialLogin/SocialLogin";
 import "./SignUp.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { sendEmailVerification } from "firebase/auth";
 
 const SignUp = () => {
   const [agree, setAgree] = useState(false);
@@ -40,8 +39,25 @@ const SignUp = () => {
       toast("Password Not Matched");
     } else {
       await createUserWithEmailAndPassword(email, password);
-      await sendEmailVerification();
+
       toast("Sent email");
+
+      const url = `https://warm-castle-28299.herokuapp.com/login`;
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      })
+        .then((res) => res.json())
+        .then((result) => {
+          console.log(result);
+          localStorage.setItem("token", result.token);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   };
 
