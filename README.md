@@ -2,6 +2,36 @@
 
 Here is my site link [Bookly-Warehouse](https://bookly-project-d23c0.firebaseapp.com/).
 
+### Some Information of this project--
+
+#### 1.A fully responsive book store management website.
+
+#### 2.Logged user can delete, update order history from inventories and can restock products.
+
+#### 3.Firebase Authentication has been used for login, sign-up and also email verification.
+
+### Technology Used--
+
+#### 1.React JS,
+
+#### 3.Node.js (Express JS),
+
+#### 4.MongoDB,
+
+#### 5.React Router,
+
+#### 6.Bootstrap,
+
+#### 7.React-Bootstrap,
+
+#### 8.Firebase,
+
+#### 9.React Firebase Hook,
+
+#### 10.JWT,
+
+#### 11.Heroku
+
 ### Project Menu
 
 PC based with mobile. Design is looking incredible web warehouse software.
