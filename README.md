@@ -1,6 +1,6 @@
-# Bookly WareHouse
+# Bookly(Book Store Management)
 
-Here is my site link [Bookly-Warehouse](https://bookly-project-d23c0.firebaseapp.com/).
+Here is my site link [Bookly(Book Store Management)](https://bookly-project-d23c0.firebaseapp.com/).
 
 ### Some Information of this project--
 
